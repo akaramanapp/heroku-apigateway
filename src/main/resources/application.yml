@@ -1,8 +1,8 @@
 server:
-  port : 8082
+  port : ${PORT:8082}
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${DOMAIN_NAME}
   client:
     serviceUrl:
       defaultZone: https://localeurekaserver.herokuapp.com/eureka/
